@@ -1,11 +1,19 @@
 {
   "devDependencies": {
     "@types/cors": "^2.8.17",
-    "@types/uuid": "^10.0.0"
+    "@types/uuid": "^10.0.0",
+    "@angular/cli": "^17.x.x"
   },
   "dependencies": {
     "@angular/cdk": "^19.2.9",
     "@nestjs/core": "^11.0.15",
     "cors": "^2.8.5"
+  },
+  "scripts": {
+    "build": "ng build --configuration production",
+    "start": "ng serve --configuration development",
+    "test": "ng test --watch=false --browsers=ChromeHeadless",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   }
 }
